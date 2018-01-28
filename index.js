@@ -27,12 +27,13 @@ function currentLine (katzDeliLine){
     var lineLength = katzDeliLine.length
     var n = 0
 while (n < lineLength) {
-  if (n=0) {
+  if (n === 0) {
       totalLine.push(`${n + 1}. ${katzDeliLine[n]}`)
+      n++
     } else {
       totalLine.push(` ${n + 1}. ${katzDeliLine[n]}`)
+      n++
     }
-n++
     }
     return `The line is currently: ${totalLine}`
   } else {
